@@ -50,7 +50,7 @@ const Contact = () => {
               <span className="text-[#757575] text-xs uppercase font-bold">Preferred Connection</span>
               <div className="flex space-x-4">
                 <a href="https://github.com/daniwebdevid" className="text-[#81B29A] hover:underline text-xs">GitHub</a>
-                <a href="#" className="text-[#81B29A] hover:underline text-xs">Discord</a>
+                <a href="https://discord.com/uservpr" className="text-[#81B29A] hover:underline text-xs">Discord</a>
               </div>
             </div>
           </div>
