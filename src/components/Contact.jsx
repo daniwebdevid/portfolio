@@ -49,7 +49,7 @@ const Contact = () => {
             <div className="flex justify-between items-center">
               <span className="text-[#757575] text-xs uppercase font-bold">Preferred Connection</span>
               <div className="flex space-x-4">
-                <a href="https://github.com/username" className="text-[#81B29A] hover:underline text-xs">GitHub</a>
+                <a href="https://github.com/daniwebdevid" className="text-[#81B29A] hover:underline text-xs">GitHub</a>
                 <a href="#" className="text-[#81B29A] hover:underline text-xs">Discord</a>
               </div>
             </div>
