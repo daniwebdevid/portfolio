@@ -1,0 +1,35 @@
+name: Deploy React App
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    container:
+      image: archlinux:latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Update and Install Tools (Arch)
+        run:
+          pacman -Syu --noconfirm
+          pacman -S --noconfirm nodejs npm git
+
+      - name: Install dependencies
+        run: npm ci 
+
+      - name: Run Tests
+        run: npm test -- --watchAll=false
+
+      - name: Build Project
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist 
+          branch: gh-pages 
