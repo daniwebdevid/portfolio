@@ -11,7 +11,7 @@ const Projects = () => {
         "Atomic symlink switching with 'ln -snf'"
       ],
       tech: ["C11", "CMake", "Bash", "POSIX Threads"],
-      link: "#" // Taruh link GitHub lo di sini
+      link: "github.com/daniwebdevid/nodeman"
     }
   ];
 
