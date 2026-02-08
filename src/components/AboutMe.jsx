@@ -1,4 +1,4 @@
-function AboutMe()  {
+function AboutMe() {
   return (
     <section id="about" className="py-20 bg-[#121212] font-mono">
       <div className="max-w-4xl mx-auto px-6">
@@ -6,25 +6,20 @@ function AboutMe()  {
         <div className="flex items-center space-x-2 mb-8 text-[#757575]">
           <span className="text-[#81B29A]">➜</span>
           <span className="text-[#E0E0E0]">whoami</span>
-          <span className="opacity-50"># Brief technical background</span>
+          <span className="opacity-50"># System-level identity & mission</span>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
           {/* Main Narrative */}
           <div className="md:col-span-8 text-[#E0E0E0] leading-relaxed">
             <p className="mb-4">
-              I am a <span className="text-[#81B29A]">System Engineer</span> enthusiast who prioritizes 
-              freedom and control over abstraction. My workflow is built on <span className="text-[#E53935]">Arch Linux</span> and <span className="text-[#E53935]">C11</span>, where every byte and CPU cycle matters.
+              I am a <span className="text-[#81B29A]">System Programmer</span> who prefers working close to the metal. I value clarity over thick abstractions, focusing on building high-performance tooling for the <span className="text-[#E53935]">Linux</span> ecosystem.
             </p>
             <p className="mb-4">
-              To me, "Technical" means every line of code must carry weight. I don't follow trends; 
-              I follow efficiency. This mindset led me to build my own tools—from custom Node version managers 
-              to manual memory management systems—ensuring that my environment remains lean and high-performance.
+              My approach to code is inspired by <span className="text-[#81B29A]">Aviation Safety standards</span>. I treat every line of code like a flight-critical system—ensuring integrity, rigorous error handling, and reliability. If it can be done in <span className="text-[#E53935]">C</span> with zero overhead, that is the path I take.
             </p>
             <p>
-              When a system breaks, I don't reinstall; I debug from the recovery environment. 
-              I'm not here to build "pretty" things that are heavy—I'm here to build robust systems 
-              that work exactly as intended.
+              I believe Linux power shouldn't be gatekept by complexity. My mission is to build robust, efficient tools like <span className="text-[#81B29A]">NDM (Node Manager)</span> to make the system more accessible and user-friendly without sacrificing raw performance.
             </p>
           </div>
 
@@ -35,20 +30,20 @@ function AboutMe()  {
             </h3>
             <ul className="text-xs space-y-3 text-[#757575]">
               <li>
-                <span className="text-[#E0E0E0] block font-bold">OS</span>
-                Arch Linux / XFCE (BlackArch config)
+                <span className="text-[#E0E0E0] block font-bold">Primary Focus</span>
+                System Tooling & Linux Internals
               </li>
               <li>
                 <span className="text-[#E0E0E0] block font-bold">Toolchain</span>
-                GCC, CMake, Bash, Systemd
+                C11, POSIX, GCC, CMake
               </li>
               <li>
                 <span className="text-[#E0E0E0] block font-bold">Philosophy</span>
-                K&R Style, Tab Indent, Manual Malloc
+                Efficiency, Reliability, User-Centricity
               </li>
               <li>
                 <span className="text-[#E0E0E0] block font-bold">Status</span>
-                Looking for System Engineering roles
+                SMK Student & Open Source Contributor
               </li>
             </ul>
           </div>

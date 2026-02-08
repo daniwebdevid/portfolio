@@ -1,30 +1,30 @@
-const Specs = () => {
+const EngineeringPhilosophy = () => {
   const categories = [
     {
-      group: "Development Environment",
+      group: "Systems & Infrastructure",
       items: [
-        { label: "Operating System", value: "Arch Linux (Custom XFCE/BlackArch Config)" },
-        { label: "Filesystem", value: "Ext4 with Dual-Arch Recovery Setup" },
-        { label: "Memory Management", value: "Optimized 700MB Idle | 4GB Pragmatic Swap" },
-        { label: "Containerization", value: "Manual Chroot / Arch Tarball (Native over Bloat)" }
+        { label: "Kernel / OS", value: "Linux Power User (Arch/Unix-like Environments)" },
+        { label: "Virtualization", value: "Native Containers & Chroot (Minimalist Abstraction)" },
+        { label: "Filesystem & IO", value: "Data Integrity & Recovery Management (Ext4/Btrfs)" },
+        { label: "Automation", value: "Bash, AWK, & POSIX-compliant Shell Scripting" }
       ]
     },
     {
-      group: "Toolchain & Logic",
+      group: "Toolchain & Performance",
       items: [
-        { label: "Compiler Flags", value: "-O2 / -march=native (Performance Oriented)" },
-        { label: "Build Systems", value: "CMake & Make (Standard UNIX Workflow)" },
-        { label: "Binary Strategy", value: "Dynamic Linking | Cross-compile (x86_64, ARM64, RISCV64)" },
-        { label: "Scripting", value: "Bash & AWK for Data Processing" }
+        { label: "Build Systems", value: "C-family Toolchains (CMake, Make, Ninja)" },
+        { label: "Optimization", value: "Low-level Performance Tuning (-O2 / Native Arch)" },
+        { label: "Deployment", value: "Cross-platform Binaries (x86_64, ARM64, RISC-V)" },
+        { label: "Version Control", value: "Advanced Git (Atomic Commits, Submodules)" }
       ]
     }
   ];
 
   return (
-    <section id="specs" className="py-20 bg-[#121212] border-t border-[#1E1E1E] font-mono">
+    <section id="engineering-standards" className="py-20 bg-[#121212] border-t border-[#1E1E1E] font-mono">
       <div className="max-w-4xl mx-auto px-6">
         <h2 className="text-[#81B29A] text-lg mb-12 uppercase font-bold tracking-tighter">
-          [ 02. system_specs ]
+          [ 02. engineering_standards ]
         </h2>
 
         <div className="space-y-12">
@@ -35,7 +35,7 @@ const Specs = () => {
               </h3>
               <div className="grid grid-cols-1 gap-1">
                 {cat.items.map((item, idx) => (
-                  <div key={idx} className="flex flex-col md:flex-row md:justify-between py-2 border-b border-[#1E1E1E] hover:bg-[#1E1E1E] transition-none group">
+                  <div key={idx} className="flex flex-col md:flex-row md:justify-between py-2 border-b border-[#1E1E1E] hover:bg-[#1E1E1E] transition-all group">
                     <span className="text-[#757575] text-sm group-hover:text-[#81B29A]">
                       {item.label}
                     </span>
@@ -49,12 +49,15 @@ const Specs = () => {
           ))}
         </div>
 
-        {/* Note about workflow */}
+        {/* Workflow Philosophy */}
         <div className="mt-12 p-4 border-l-2 border-[#E53935] bg-[#1E1E1E]/50">
-          <p className="text-[#757575] text-xs leading-relaxed">
-            <span className="text-[#E0E0E0] font-bold">Workflow Philosophy:</span> I maintain a lean system. 
-            Whether it's managing AUR packages with <code className="text-[#81B29A]">yay</code> or 
-            debugging via a secondary Arch partition, I prioritize native solutions over heavy abstractions.
+          <p className="text-[#757575] text-xs leading-relaxed uppercase tracking-widest mb-2 font-bold">
+            Workflow Philosophy:
+          </p>
+          <p className="text-[#E0E0E0] text-sm leading-relaxed">
+            I prioritize <span className="text-[#81B29A]">lean systems</span> and native solutions over heavy abstractions. 
+            From managing custom toolchains to cross-compilation for ARM/RISC-V, 
+            I build environments that are performant by default, not by accident.
           </p>
         </div>
       </div>
@@ -62,4 +65,4 @@ const Specs = () => {
   );
 };
 
-export default Specs;
+export default EngineeringPhilosophy;
